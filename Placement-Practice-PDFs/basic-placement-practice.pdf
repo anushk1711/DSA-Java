@@ -1,0 +1,3943 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R ] /Count 25 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2531 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 1 of 25) Tj
+T*
+(Basic Java & DSA Practice) Tj
+T*
+(Placement preparation portfolio | Original practice code) Tj
+T*
+(Problems included: 52) Tj
+T*
+(Each entry includes its title, estimated complexity, source path, and original code.) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Arrange Alphabets In Desc) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: Frequency problems/ArrangeAlphabetsInDesc.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(public class ArrangeAlphabetsInDesc{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+() Tj
+T*
+(        String res = "";) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+() Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+(            if\(res.indexOf\(ch\) == -1\){) Tj
+T*
+(                res += ch;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        char[] arr = res.toCharArray\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<arr.length-1;i++\){) Tj
+T*
+(            for\(int j=i+1;j<arr.length;j++\){) Tj
+T*
+(                if\(arr[i] < arr[j]\){) Tj
+T*
+(                    char temp = arr[i];) Tj
+T*
+(                    arr[i] = arr[j];) Tj
+T*
+(                    arr[j] = temp;) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(char c : arr\){) Tj
+T*
+(            System.out.print\(c\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Counting Frequency) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: Frequency problems/CountingFrequency.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class CountingFrequency{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+() Tj
+T*
+(        int[] freq = new int[256];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+(            freq[ch]++;) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2464 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 2 of 25) Tj
+T*
+(        }) Tj
+T*
+(        ) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+(            // if\(freq[ch] != 0\){) Tj
+T*
+(            // System.out.print\(ch + ": " + freq[ch] + " "\);) Tj
+T*
+(            // freq[ch] = 0;) Tj
+T*
+(                ) Tj
+T*
+(            // }) Tj
+T*
+(           ) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Rotate String N) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: Frequency problems/RotateStringN.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class RotateStringN {) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int len = str.length\(\); ) Tj
+T*
+() Tj
+T*
+(        // Print from n to end) Tj
+T*
+(        for\(int i = len-n; i < len; i++\){) Tj
+T*
+(            System.out.print\(str.charAt\(i\)\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        // Print from 0 to n-1) Tj
+T*
+(        for\(int i = 0; i < str.length\(\)-n; i++\){) Tj
+T*
+(            System.out.print\(str.charAt\(i\)\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Square Matrix Corner Sum) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: Frequency problems/SquareMatrixCornerSum.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class SquareMatrixCornerSum {) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[][] arr = new int[n][n];) Tj
+T*
+() Tj
+T*
+(        // Input) Tj
+T*
+(        for\(int i = 0; i < n; i++\) {) Tj
+T*
+(            for\(int j = 0; j < n; j++\) {) Tj
+T*
+(                arr[i][j] = sc.nextInt\(\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        // Corner sum) Tj
+T*
+(        int sum = arr[0][0] ) Tj
+T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 2494 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 3 of 25) Tj
+T*
+(                + arr[0][n-1] ) Tj
+T*
+(                + arr[n-1][0] ) Tj
+T*
+(                + arr[n-1][n-1];) Tj
+T*
+() Tj
+T*
+(        System.out.print\(sum\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Downtriangle) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/Downtriangle.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class Downtriangle{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);   ) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+(     for\(int i=n;i>=1;i--\){) Tj
+T*
+(        for\(int j=1;j<=i;j++\){) Tj
+T*
+(            System.out.print\(j\);) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Half Diamond) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/HalfDiamond.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class HalfDiamond{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+(     for\(int i=1;i<=n;i++\){) Tj
+T*
+(        for\(int j=1;j<=i;j++\){) Tj
+T*
+(            System.out.print\("* "\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }   ) Tj
+T*
+(     for\(int i=n-1;i>=1;i--\){) Tj
+T*
+(        for\(int j=1;j<=i;j++\){) Tj
+T*
+(            System.out.print\("* "\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Largest) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/Largest.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Largest{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 2507 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 4 of 25) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        ) Tj
+T*
+(        int max = arr[0];) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i]>max\){) Tj
+T*
+(                max = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(max\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Reverse Triangle) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/ReverseTriangle.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class ReverseTriangle{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        ) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=0;i<n;i++\)//row) Tj
+T*
+(        {) Tj
+T*
+(            for\(int j=0;j<=i;j++\){) Tj
+T*
+(                System.out.print\(" "\);//space) Tj
+T*
+(            }) Tj
+T*
+(            for\(int k=i;k<n;k++\){) Tj
+T*
+(                System.out.print\("* " \);//*) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Second Largest) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/SecondLargest.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class SecondLargest{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int largest = Integer.MIN_VALUE;) Tj
+T*
+(        int secondlargest = Integer.MIN_VALUE;) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i]>largest\){) Tj
+T*
+(                secondlargest = largest;) Tj
+T*
+(                largest = arr[i];) Tj
+T*
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 2390 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 5 of 25) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=0;i<n-1;i++\){) Tj
+T*
+(            if\(arr[i]>secondlargest && secondlargest != largest\){) Tj
+T*
+(                secondlargest = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(secondlargest\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Smallest) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/Smallest.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Smallest{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int min = arr[0];) Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i]<min\){) Tj
+T*
+(                min = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(min\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Sumofarray) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/Sumofarray.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Sumofarray{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int sum = 0; ) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            sum += arr[i];) Tj
+T*
+(        }) Tj
+T*
+(        System.out.print\(sum\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: binarypattern) Tj
+T*
+(Level: Basic) Tj
+T*
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 2634 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 6 of 25) Tj
+T*
+(Source: pattern/binarypattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class binarypattern{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                if\(\(i+j\)%2==0\){) Tj
+T*
+(                    System.out.print\(1\); //System.out.print\(0\);) Tj
+T*
+(                }) Tj
+T*
+(                else{) Tj
+T*
+(                    System.out.print\(0\); //System.out.print\(1\);) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+(                System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: characterpattern) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/characterpattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class characterpattern{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        char c = 'A';) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                System.out.print\(c\);) Tj
+T*
+(                c++;) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: continuousnumber) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/continuousnumber.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class continuousnumber{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int num = 1;) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                System.out.print\(num\);) Tj
+T*
+(                num++;) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 2606 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 7 of 25) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: fixednumpattern) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/fixednumpattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class fixednumpattern{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);  ) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+(     for\(int i=1;i<=4;i++\){) Tj
+T*
+(        for\(int j=1;j<=4;j++\){) Tj
+T*
+(            // System.out.print\(j\);//if we print j o/p is 1234 4 times) Tj
+T*
+(            System.out.print\(i\);//if we print i o/p is 1111 2222 3333 4444) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     } ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: fulldiamond) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/fulldiamond.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class fulldiamond {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        for \(int i = 1; i <= n; i++\) {) Tj
+T*
+(            for \(int s = 1; s <= n - i; s++\) {) Tj
+T*
+(                System.out.print\(" "\);) Tj
+T*
+(            }) Tj
+T*
+(            for \(int j = 1; j <= 2 * i - 1; j++\) {) Tj
+T*
+(                System.out.print\(j\);//print\("*"\)) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for \(int i = n - 1; i >= 1; i--\) {) Tj
+T*
+(            for \(int s = 1; s <= n - i; s++\) {) Tj
+T*
+(                System.out.print\(" "\);) Tj
+T*
+(            }) Tj
+T*
+(            for \(int j = 1; j <= 2 * i - 1; j++\) {) Tj
+T*
+(                System.out.print\(j\);//print\("*"\)) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: hollow) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/hollow.java) Tj
+T*
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 2423 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 8 of 25) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class hollow{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(     int n = sc.nextInt\(\);   ) Tj
+T*
+() Tj
+T*
+(     for\(int i=1;i<=n;i++\){) Tj
+T*
+(        for\(int j=1;j<=n;j++\){) Tj
+T*
+(            if\(i==1 || i==n || j==1 || j==n\)) Tj
+T*
+(              System.out.print\("*"\);) Tj
+T*
+(            else ) Tj
+T*
+(               System.out.print\(" "\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: palindromepyramid) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/palindromepyramid.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class palindromepyramid {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int num = 1;) Tj
+T*
+() Tj
+T*
+(        for \(int i = 1; i <= n; i++\) {) Tj
+T*
+(            for \(int s = 1; s <= n - i; s++\) {) Tj
+T*
+(                System.out.print\(" "\);) Tj
+T*
+(                ) Tj
+T*
+(            }) Tj
+T*
+(            for \(int k = 1; k <= i; k++\) {) Tj
+T*
+(                System.out.print\(k\);) Tj
+T*
+(               ) Tj
+T*
+(            }) Tj
+T*
+(            for\(int j=i-1;j>=1;j--\)) Tj
+T*
+(               System.out.print\(j\);) Tj
+T*
+(                // num++;) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        ) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: pattern) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/pattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class pattern{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 2475 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 9 of 25) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                System.out.print\(j\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: pyramid) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/pyramid.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class pyramid{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);   ) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(     for\(int i=1;i<=n;i++\){) Tj
+T*
+(        for\(int s=1;s<=n-i;s++\){) Tj
+T*
+(            System.out.print\(" "\);) Tj
+T*
+(        }) Tj
+T*
+(        for\(int j=1;j<=2*i-1;j++\){) Tj
+T*
+(            System.out.print\(j\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: reverse) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/reverse.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class reverse{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<=4;i++\){) Tj
+T*
+(            for\(int j=i;j>=1;j--\){) Tj
+T*
+(                System.out.print\(j\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: samenumpattern) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/samenumpattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class samenumpattern{) Tj
+T*
+ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 2577 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 10 of 25) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);  ) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+(     for\(int i=1;i<=4;i++\){) Tj
+T*
+(        for\(int j=1;j<=i;j++\){) Tj
+T*
+(            System.out.print\(i\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     } ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: space) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: pattern/space.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class space{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(     Scanner sc = new Scanner\(System.in\);   ) Tj
+T*
+(     int n = sc.nextInt\(\);) Tj
+T*
+(     for\(int i=1;i<=n;i++\){) Tj
+T*
+(        for\(int j=1;j<=n-i;j++\){) Tj
+T*
+(            System.out.print\(" "\);) Tj
+T*
+(        }) Tj
+T*
+(        for\(int k=1;k<=i;k++\){) Tj
+T*
+(            System.out.print\(k\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+() Tj
+T*
+(      for\(int i=n-1;i>=1;i--\){) Tj
+T*
+(        for\(int j=1;j<=n-i;j++\){) Tj
+T*
+(            System.out.print\(" "\);) Tj
+T*
+(        }) Tj
+T*
+(        for\(int k=1;k<=i;k++\){) Tj
+T*
+(            System.out.print\(k\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(     }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Advanced Rev) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/AdvancedRev.java) Tj
+T*
+(Time complexity: O\(1\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class AdvancedRev{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+(        StringBuilder sb = new StringBuilder\(str\);) Tj
+T*
+(        System.out.println\(sb.reverse\(\)\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Armstrong) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Armstrong.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 25 0 R >>
+endobj
+25 0 obj
+<< /Length 2242 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 11 of 25) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class Armstrong{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int original = n;) Tj
+T*
+(        int count = 0;) Tj
+T*
+(        int sum = 0;) Tj
+T*
+(        int digit = 0;) Tj
+T*
+(        int temp = n;) Tj
+T*
+() Tj
+T*
+(        while \(temp!=0\){) Tj
+T*
+(            count++;) Tj
+T*
+(            temp = temp/10;) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        temp = n;) Tj
+T*
+(        while\(temp!=0\){) Tj
+T*
+(            digit = temp%10;) Tj
+T*
+(            sum = sum+\(int\)Math.pow\(digit,count\);) Tj
+T*
+(            temp = temp/10;) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        if\(sum == original\){) Tj
+T*
+(            System.out.println\("Armstrong"\);) Tj
+T*
+(        }) Tj
+T*
+(        else{) Tj
+T*
+(            System.out.println\("not armstrong"\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Array Basic) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/ArrayBasic.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class ArrayBasic{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        int sum = 0;) Tj
+T*
+() Tj
+T*
+(        // take first element first) Tj
+T*
+(        arr[0] = sc.nextInt\(\);) Tj
+T*
+(        int max = arr[0];) Tj
+T*
+(        int min = arr[0];) Tj
+T*
+(        sum = arr[0];) Tj
+T*
+() Tj
+T*
+(        // loop from 1) Tj
+T*
+(        for\(int i = 1; i < arr.length; i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(            sum = sum + arr[i];) Tj
+T*
+() Tj
+T*
+(            if\(arr[i] > max\){) Tj
+T*
+(                max = arr[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(arr[i] < min\){) Tj
+T*
+ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 27 0 R >>
+endobj
+27 0 obj
+<< /Length 2380 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 12 of 25) Tj
+T*
+(                min = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("max: " + max\);) Tj
+T*
+(        System.out.println\("min: " + min\);) Tj
+T*
+(        System.out.println\("sum: " + sum\);) Tj
+T*
+() Tj
+T*
+(        // reverse print) Tj
+T*
+(        for\(int i = arr.length - 1; i >= 0; i--\){) Tj
+T*
+(            System.out.print\(arr[i] + " "\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(         int counteven = 0;) Tj
+T*
+(         int countodd = 0;) Tj
+T*
+(        for\(int i=0;i<arr.length;i++\){) Tj
+T*
+(            if\(arr[i]%2 == 0\){) Tj
+T*
+(                counteven++;) Tj
+T*
+(            }) Tj
+T*
+(            else ) Tj
+T*
+(              countodd++;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("Even: " + counteven\);) Tj
+T*
+(        System.out.println\("Odd: " + countodd\);) Tj
+T*
+() Tj
+T*
+(    ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Automorphic) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Automorphic.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class Automorphic {) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int original = n;) Tj
+T*
+() Tj
+T*
+(        int square = n * n;) Tj
+T*
+() Tj
+T*
+(        int digits = 0;) Tj
+T*
+(        int temp = n;) Tj
+T*
+() Tj
+T*
+(        while \(temp != 0\) {) Tj
+T*
+(            digits++;) Tj
+T*
+(            temp = temp / 10;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int power = \(int\) Math.pow\(10, digits\);) Tj
+T*
+() Tj
+T*
+(        if \(square % power == original\) {) Tj
+T*
+(            System.out.println\("Automorphic Number"\);) Tj
+T*
+(        } else {) Tj
+T*
+(            System.out.println\("Not Automorphic Number"\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Bubble Sort) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/BubbleSort.java) Tj
+T*
+ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 29 0 R >>
+endobj
+29 0 obj
+<< /Length 2328 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 13 of 25) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class BubbleSort{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n-1;i++\){) Tj
+T*
+() Tj
+T*
+(        boolean isswapped = true;) Tj
+T*
+() Tj
+T*
+(            //sorting the array) Tj
+T*
+(            for\(int j=0;j<n-i-1;j++\){) Tj
+T*
+(                if\(arr[j] < arr[j+1]\){ //descending order if ascending order arr[j] > arr[j+1]) Tj
+T*
+(                    int temp = arr[j];) Tj
+T*
+(                    arr[j] = arr[j+1];) Tj
+T*
+(                    arr[j+1] = temp;) Tj
+T*
+(                    isswapped = true;) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+(            ) Tj
+T*
+(        if\(!isswapped\){) Tj
+T*
+(            break;) Tj
+T*
+(        }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        //sorted array printing) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            System.out.print\(arr[i] + " "\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+() Tj
+T*
+(        int Largest = arr[0];) Tj
+T*
+(        int secLargest = -1;) Tj
+T*
+() Tj
+T*
+(        //second largest element) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i] != Largest\){) Tj
+T*
+(                secLargest = arr[i];) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        if\(secLargest == -1\){) Tj
+T*
+(            System.out.println\("NO Second Largest"\);) Tj
+T*
+(        }else) Tj
+T*
+(           System.out.println\("Second Largest: " + secLargest\);) Tj
+T*
+() Tj
+T*
+(           int smallest = arr[n-1];) Tj
+T*
+() Tj
+T*
+(           int secSmallest = -1;) Tj
+T*
+() Tj
+T*
+(           //second smallest) Tj
+T*
+(           for\(int i=n-2;i>=0;i--\){) Tj
+T*
+(            if\(arr[i] != smallest\){) Tj
+T*
+(                secSmallest = arr[i];) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(           }) Tj
+T*
+ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 31 0 R >>
+endobj
+31 0 obj
+<< /Length 2760 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 14 of 25) Tj
+T*
+(                if\(secSmallest == -1\){) Tj
+T*
+(            System.out.println\("NO Second smallest"\);) Tj
+T*
+(        }else) Tj
+T*
+(           System.out.println\("Second smallest: " + secSmallest\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Count Digits) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/CountDigits.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class CountDigits{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int count = 0;) Tj
+T*
+() Tj
+T*
+(        while\(n!=0\){) Tj
+T*
+(            n= n/10;) Tj
+T*
+(            count++;) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(count\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Count Vowels) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/CountVowels.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class CountVowels{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+(        int count = 0;) Tj
+T*
+( ) Tj
+T*
+(        //instead of using str.charAt\(i\) again and again use) Tj
+T*
+(        //char ch = str.charAt\(i\);) Tj
+T*
+(        //if u want vowels checking easily convert string str.LowerCase\(\) then u will find vowels easily) Tj
+T*
+(    not tocheck for uppercase) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            if\(str.charAt\(i\) =='a' || str.charAt\(i\) == 'e' || str.charAt\(i\) == 'i' || str.charAt\(i\) ==) Tj
+T*
+(    'o' || str.charAt\(i\) == 'u' || str.charAt\(i\) == 'A' || str.charAt\(i\) == 'E' || str.charAt\(i\) == 'I') Tj
+T*
+(    || str.charAt\(i\) == 'O' || str.charAt\(i\) == 'U'\){) Tj
+T*
+(                count++;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.print\(count\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Demo) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Demo.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 33 0 R >>
+endobj
+33 0 obj
+<< /Length 2342 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 15 of 25) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Demo{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] =sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int target = sc.nextInt\(\);) Tj
+T*
+(        boolean found = false;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer, Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            int complement = target - arr[i];) Tj
+T*
+(            if\(map.containsKey\(complement\)\){) Tj
+T*
+(                found = true;) Tj
+T*
+(                System.out.println\(map.get\(complement\) + " " + i\);) Tj
+T*
+(                System.out.println\(complement + " " + arr[i]\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(           map.put\(arr[i],i\);) Tj
+T*
+(           ) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Factorial) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Factorial.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class Factorial{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int fact = 1;) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            fact = fact*i;) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(fact\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Fibonacci) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Fibonacci.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class Fibonacci{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 35 0 R >>
+endobj
+35 0 obj
+<< /Length 2368 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 16 of 25) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int a = 0;) Tj
+T*
+(        int b = 1;) Tj
+T*
+() Tj
+T*
+(        if\(n==1\){) Tj
+T*
+(            System.out.print\(0\);) Tj
+T*
+(        }else) Tj
+T*
+(            System.out.print\(a + " " + b + " "\);) Tj
+T*
+(            ) Tj
+T*
+(        int c = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=3;i<=n;i++\){) Tj
+T*
+(            c= a+b;) Tj
+T*
+(            a = b;) Tj
+T*
+(            b = c;) Tj
+T*
+(            System.out.print\(c + " "\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: First Non Repeat Char) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/First_Non_Repeat_Char.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class First_Non_Repeat_Char{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        HashMap<Character,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(char ch : str.toCharArray\(\)\){) Tj
+T*
+(                map.put\(ch,map.getOrDefault\(ch,0\)+1\);) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(char ch : str.toCharArray\(\)\){) Tj
+T*
+(            if\(map.get\(ch\)==1\){) Tj
+T*
+(                System.out.print\(ch\);) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Interview Level Rev) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/InterviewLevelRev.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class InterviewLevelRev{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+(        String rev = "";) Tj
+T*
+ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 37 0 R >>
+endobj
+37 0 obj
+<< /Length 2373 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 17 of 25) Tj
+T*
+() Tj
+T*
+(        for\(int i=str.length\(\)-1;i>=0;i--\){) Tj
+T*
+(            rev= rev+str.charAt\(i\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(rev\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Medium Level Reverse) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/MediumLevelReverse.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class MediumLevelReverse{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=str.length\(\)-1;i>=0;i--\){) Tj
+T*
+(            System.out.print\(str.charAt\(i\)\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Missing Number) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/MissingNumber.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class MissingNumber{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = new int[n-1];) Tj
+T*
+() Tj
+T*
+(        int sum = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<arr.length;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(            sum = sum+arr[i];) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int total_sum = n * \(n+1\)/2;) Tj
+T*
+() Tj
+T*
+(        int missingNumber = total_sum - sum;) Tj
+T*
+() Tj
+T*
+(        System.out.print\(missingNumber\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Neon) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Neon.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 39 0 R >>
+endobj
+39 0 obj
+<< /Length 2349 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 18 of 25) Tj
+T*
+() Tj
+T*
+(class Neon{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int original = n;) Tj
+T*
+() Tj
+T*
+(        int sqr = n*n;) Tj
+T*
+(        System.out.println\("sqr " + sqr\);) Tj
+T*
+(        int sum = 0;) Tj
+T*
+() Tj
+T*
+(        while\(sqr!=0\){) Tj
+T*
+(            int digit = sqr%10;) Tj
+T*
+(            sum = sum+digit;) Tj
+T*
+(            sqr = sqr/10;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        if\(sum == original\)) Tj
+T*
+(         System.out.println\("Neon number"\);) Tj
+T*
+(        else) Tj
+T*
+(         System.out.print\("not neon number"\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Palindrome) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Palindrome.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(public class Palindrome{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int original = n;) Tj
+T*
+(        int reverse = 0;) Tj
+T*
+() Tj
+T*
+(        while\(n > 0\){) Tj
+T*
+(            int last = n%10;) Tj
+T*
+(            n = n/10;) Tj
+T*
+(            reverse = reverse*10+last;) Tj
+T*
+(        }) Tj
+T*
+(        if\(reverse == original\)) Tj
+T*
+(        System.out.println\("Palindrome"\);) Tj
+T*
+(        else) Tj
+T*
+(        System.out.println\("not palindrome"\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Password) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Password.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Password{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+ET
+endstream
+endobj
+40 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 41 0 R >>
+endobj
+41 0 obj
+<< /Length 2814 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 19 of 25) Tj
+T*
+(        int n = str.length\(\);) Tj
+T*
+() Tj
+T*
+(        boolean haslength = false;) Tj
+T*
+(        boolean hasUpper = false;) Tj
+T*
+(        boolean hasLower = false;) Tj
+T*
+(        boolean hasDigit = false;) Tj
+T*
+(        boolean hasSpecial = false;) Tj
+T*
+() Tj
+T*
+(        if\(n>=9\){) Tj
+T*
+(            haslength = true;) Tj
+T*
+(            for\(int i=0;i<n;i++\){) Tj
+T*
+(                char ch = str.charAt\(i\);) Tj
+T*
+() Tj
+T*
+(                if\(Character.isUpperCase\(ch\)\){) Tj
+T*
+(                    System.out.println\("Perfect Password"\);) Tj
+T*
+(                    break;) Tj
+T*
+(                }else if\(Character.isLowerCase\(ch\)\){) Tj
+T*
+(                    System.out.println\("Perfect Password"\);) Tj
+T*
+(                    break;) Tj
+T*
+(                }else if\(Character.isDigit\(ch\)\){) Tj
+T*
+(                    System.out.println\("Perfect Password"\);) Tj
+T*
+(                }else{) Tj
+T*
+(                    hasSpecial = true;) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+(        if\(haslength && hasUpper && hasLower && hasDigit && hasDigit && hasSpecial\){) Tj
+T*
+(            System.out.println\("Perfect Password"\);) Tj
+T*
+(        }else{) Tj
+T*
+(            System.out.println\("Not a Perfect Password"\);) Tj
+T*
+(        }) Tj
+T*
+(    }else{) Tj
+T*
+(                    System.out.println\("Not a Perfect Password"\);) Tj
+T*
+() Tj
+T*
+(    }sc.close\(\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Print Each Char) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/PrintEachChar.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class PrintEachChar{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            System.out.println\(str.charAt\(i\)\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Reverse String) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/ReverseString.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(//it is baisc level reversing the string) Tj
+T*
+(//first we convert the string to char array --> run loop on it from arr.length-1 to >=0 --> then print) Tj
+T*
+(    arr[i].) Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+42 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 43 0 R >>
+endobj
+43 0 obj
+<< /Length 2384 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 20 of 25) Tj
+T*
+(public class ReverseString{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+(        ) Tj
+T*
+(        char[] arr = str.toCharArray\(\);) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=arr.length-1;i>=0;i--\){) Tj
+T*
+(            System.out.print\(arr[i]\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Sec Largest) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/SecLargest.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class SecLargest{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int largest = arr[0];) Tj
+T*
+(        int Seclargest = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i] > largest\){) Tj
+T*
+(                Seclargest = largest;) Tj
+T*
+(                largest = arr[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(arr[i] > Seclargest && arr[i] != largest\){) Tj
+T*
+(                Seclargest = arr[i];) Tj
+T*
+() Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("largest: " + largest\);) Tj
+T*
+(        System.out.println\("seclargest: " + Seclargest\);) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Star) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/Star.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(class Star{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int r = sc.nextInt\(\);) Tj
+T*
+(        int c = sc.nextInt\(\);) Tj
+T*
+ET
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 45 0 R >>
+endobj
+45 0 obj
+<< /Length 2406 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 21 of 25) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<r;i++\){) Tj
+T*
+(            for\(int j=0;j<c;j++\){) Tj
+T*
+(                System.out.print\("* "\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Strong Number) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: practice/StrongNumber.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(class StrongNumber{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int original = n;) Tj
+T*
+() Tj
+T*
+(        int sum = 0;) Tj
+T*
+() Tj
+T*
+(        while\(n!=0\){) Tj
+T*
+(            int digit = n%10;) Tj
+T*
+(            int fact = 1;) Tj
+T*
+() Tj
+T*
+(            for\(int i=1;i<=digit;i++\){) Tj
+T*
+(                fact = fact*i;) Tj
+T*
+(            }) Tj
+T*
+(            sum = sum+fact;) Tj
+T*
+(            n = n/10;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(sum\);) Tj
+T*
+(        if\(sum == original\){) Tj
+T*
+(            System.out.println\("Strong number"\);) Tj
+T*
+(        }) Tj
+T*
+(        else) Tj
+T*
+(          System.out.println\("not Strong number"\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Arithmatic Expression) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/ArithmaticExpression.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class ArithmaticExpression{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+() Tj
+T*
+(        Stack<Integer> stack = new Stack<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+() Tj
+T*
+(            if\(Character.isDigit\(ch\)\){) Tj
+T*
+(                stack.push\(ch - '0'\);) Tj
+T*
+ET
+endstream
+endobj
+46 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 47 0 R >>
+endobj
+47 0 obj
+<< /Length 2486 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 22 of 25) Tj
+T*
+(            }else{) Tj
+T*
+(                int b = stack.pop\(\);) Tj
+T*
+(                int a = stack.pop\(\);) Tj
+T*
+() Tj
+T*
+(                int result = 0;) Tj
+T*
+() Tj
+T*
+(                if\(ch == '+'\){) Tj
+T*
+(                    result = a+b;) Tj
+T*
+(                }else if\(ch == '-'\){) Tj
+T*
+(                    result = a-b;) Tj
+T*
+(                }else if\(ch == '*'\){) Tj
+T*
+(                    result = a*b;) Tj
+T*
+(                }else if\(ch =='/'\) {) Tj
+T*
+(                    result = a/b;) Tj
+T*
+(                }) Tj
+T*
+() Tj
+T*
+(                stack.push\(result\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        // System.out.println\(stack.pop\(\)\);) Tj
+T*
+(        System.out.println\(stack\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Inverted Left Traingle) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/Inverted_Left_Traingle.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Inverted_Left_Traingle{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = 5;) Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=n-i+1;j++\){) Tj
+T*
+(                System.out.print\("*"\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(""\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Left Triangle) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/Left_Triangle.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Left_Triangle{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = 5;) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            for\(int j=0;j<=i;j++\){) Tj
+T*
+(                System.out.print\("*"\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(""\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+ET
+endstream
+endobj
+48 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 49 0 R >>
+endobj
+49 0 obj
+<< /Length 2545 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 23 of 25) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Number To Words) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/NumberToWords.java) Tj
+T*
+(Time complexity: O\(1\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class NumberToWords{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String[] ones = { ) Tj
+T*
+(          "",  "One" ,"Two","Three","Four", "Five","Siz","Seven","Eight","Nine") Tj
+T*
+(        };) Tj
+T*
+() Tj
+T*
+(        String[] teens = {) Tj
+T*
+(           "Ten", "Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Nineteen") Tj
+T*
+(        };) Tj
+T*
+() Tj
+T*
+(        String[] tens = {) Tj
+T*
+(           "","", "Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","Ninety") Tj
+T*
+(        };) Tj
+T*
+() Tj
+T*
+(        int num = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        if\(num > 100\){) Tj
+T*
+(            System.out.print\(ones[num/100] + " Hundred "\);) Tj
+T*
+(            num = num%100;) Tj
+T*
+(        }) Tj
+T*
+(         if\(num >= 10 && num <= 19\){) Tj
+T*
+(            System.out.print\(teens[num - 10]\);) Tj
+T*
+(        }else{) Tj
+T*
+(            System.out.print\(tens[num/10] + " "\);) Tj
+T*
+(            System.out.print\(ones[num%10]\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Number Left Triangle) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/Number_Left_Triangle.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Number_Left_Triangle{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = 5;) Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for \(int k = 1; k <= n - i; k++\) {) Tj
+T*
+(                System.out.print\(" "\);) Tj
+T*
+(}) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                System.out.print\(j\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(""\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+ET
+endstream
+endobj
+50 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 51 0 R >>
+endobj
+51 0 obj
+<< /Length 2376 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 24 of 25) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Solid Rect) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/Solid_Rect.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Solid_Rect{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            for\(int j=0;j<n;j++\){) Tj
+T*
+(                System.out.print\("*"\);) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Union Intersectn Except) Tj
+T*
+(Level: Basic) Tj
+T*
+(Source: zoho/pattern/Union_Intersectn_Except.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Union_Intersectn_Except{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int m = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int[] a = new int[n];) Tj
+T*
+(        int[] b = new int[m];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            a[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<m;i++\){) Tj
+T*
+(            b[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashSet<Integer> set = new HashSet<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : a\){) Tj
+T*
+(            set.add\(num\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int num : b\){) Tj
+T*
+(            set.add\(num\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\( "Union " +  set\);) Tj
+T*
+() Tj
+T*
+(        System.out.print\("Intersection "\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        for\(int num : b\){) Tj
+T*
+(            if\(set.contains\(num\)\){) Tj
+T*
+(                System.out.print\(num + " "\);) Tj
+T*
+(            }) Tj
+T*
+ET
+endstream
+endobj
+52 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 53 0 R >>
+endobj
+53 0 obj
+<< /Length 566 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 25 of 25) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(        System.out.print\("Except "\);) Tj
+T*
+() Tj
+T*
+(        for\(int num :  a\){) Tj
+T*
+(            if\(num%2 != 0\){) Tj
+T*
+(                System.out.print\(num + " "\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int num : b\){) Tj
+T*
+(            if\(num%2 == 0\){) Tj
+T*
+(                System.out.print\(num + " "\);) Tj
+T*
+() Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+xref
+0 54
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000290 00000 n 
+0000000358 00000 n 
+0000000484 00000 n 
+0000003066 00000 n 
+0000003192 00000 n 
+0000005707 00000 n 
+0000005833 00000 n 
+0000008378 00000 n 
+0000008506 00000 n 
+0000011065 00000 n 
+0000011193 00000 n 
+0000013635 00000 n 
+0000013763 00000 n 
+0000016449 00000 n 
+0000016577 00000 n 
+0000019235 00000 n 
+0000019363 00000 n 
+0000021838 00000 n 
+0000021966 00000 n 
+0000024493 00000 n 
+0000024621 00000 n 
+0000027250 00000 n 
+0000027378 00000 n 
+0000029672 00000 n 
+0000029800 00000 n 
+0000032232 00000 n 
+0000032360 00000 n 
+0000034740 00000 n 
+0000034868 00000 n 
+0000037680 00000 n 
+0000037808 00000 n 
+0000040202 00000 n 
+0000040330 00000 n 
+0000042750 00000 n 
+0000042878 00000 n 
+0000045303 00000 n 
+0000045431 00000 n 
+0000047832 00000 n 
+0000047960 00000 n 
+0000050826 00000 n 
+0000050954 00000 n 
+0000053390 00000 n 
+0000053518 00000 n 
+0000055976 00000 n 
+0000056104 00000 n 
+0000058642 00000 n 
+0000058770 00000 n 
+0000061367 00000 n 
+0000061495 00000 n 
+0000063923 00000 n 
+0000064051 00000 n 
+trailer
+<< /Size 54 /Root 1 0 R >>
+startxref
+64668
+%%EOF

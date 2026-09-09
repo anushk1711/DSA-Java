@@ -1,0 +1,6503 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R 54 0 R 56 0 R 58 0 R 60 0 R 62 0 R 64 0 R 66 0 R 68 0 R 70 0 R 72 0 R 74 0 R 76 0 R 78 0 R 80 0 R 82 0 R 84 0 R ] /Count 41 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2653 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 1 of 41) Tj
+T*
+(Medium-Level Placement Practice) Tj
+T*
+(Placement preparation portfolio | Original practice code) Tj
+T*
+(Problems included: 65) Tj
+T*
+(Each entry includes its title, estimated complexity, source path, and original code.) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Anagram) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Anagram.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Anagram{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str1 = sc.nextLine\(\);) Tj
+T*
+(        char[] ch1 = str1.toCharArray\(\);) Tj
+T*
+(        String str2 = sc.nextLine\(\);) Tj
+T*
+(        char[] ch2 = str2.toCharArray\(\);) Tj
+T*
+() Tj
+T*
+(        if\(str1.length\(\) != str2.length\(\)\){) Tj
+T*
+(            System.out.print\(false\);) Tj
+T*
+(            return;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Character,Integer> map1 = new HashMap<>\(\);) Tj
+T*
+(        HashMap<Character,Integer> map2 = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(Character ch : ch1\){) Tj
+T*
+(            if\(map1.containsKey\(ch\)\){) Tj
+T*
+(                map1.put\(ch, map1.get\(ch\)+1\);) Tj
+T*
+(            }) Tj
+T*
+(            else{) Tj
+T*
+(                map1.put\(ch,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(Character ch : ch2\){) Tj
+T*
+(            if\(map2.containsKey\(ch\)\){) Tj
+T*
+(                map2.put\(ch, map2.get\(ch\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map2.put\(ch,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.print\(map1.equals\(map2\)\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Best Time to Buy Sell) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Best_Time_to_Buy_Sell.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Best_Time_to_Buy_Sell{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2522 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 2 of 41) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int minPrice = arr[0];) Tj
+T*
+(        int maxProfit = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i] < minPrice\){) Tj
+T*
+(                minPrice = arr[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            maxProfit = Math.max\(maxProfit, arr[i]-minPrice\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.print\("Best time to buy: " + minPrice + " " + "Best time to Sell: " + maxProfit\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: First Non Repeating Char) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/First_Non_Repeating_Char.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class First_Non_Repeating_Char{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+() Tj
+T*
+(        HashMap<Character,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+() Tj
+T*
+(            if\(map.containsKey\(ch\)\){) Tj
+T*
+(                map.put\(ch, map.getOrDefault\(ch,0\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(ch,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+(            if\(map.get\(ch\) == 1\){) Tj
+T*
+(                System.out.print\("First Repeating char is: " + ch\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(                System.out.print\("Not found"\);) Tj
+T*
+() Tj
+T*
+(        ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Longest Sequence) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Longest_Sequence.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Longest_Sequence{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 2389 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 3 of 41) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashSet<Integer> set = new HashSet<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            set.add\(num\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int maxLength = 0;) Tj
+T*
+(        for\(int num : set\){) Tj
+T*
+(            if\(!set.contains\(num-1\)\){) Tj
+T*
+(                int currentNum = num;) Tj
+T*
+(                int length = 1;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(            while\(set.contains\(currentNum+1\)\){) Tj
+T*
+(                currentNum++;) Tj
+T*
+(                length++;) Tj
+T*
+(            }) Tj
+T*
+(                maxLength = Math.max\(maxLength, length\);) Tj
+T*
+(            ) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(                System.out.print\("Longest Sequence length is: " + maxLength\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Longest Subarray Sum) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Longest_Subarray_Sum.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Longest_Subarray_Sum{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int  n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        int target = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(        int res = target - num;) Tj
+T*
+(            if\(map.containsKey\(res\)\){) Tj
+T*
+(                System.out.print\(num + " " + res\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            map.put\(num,1\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 2432 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 4 of 41) Tj
+T*
+(Problem: Longest Subarray With Sum Lessthan Eql K) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Longest_Subarray_WithSumLessthanEqlK.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Longest_Subarray_WithSumLessthanEqlK {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+() Tj
+T*
+(        int n = 5;) Tj
+T*
+(        int[] arr = {2, -1, 3, -2, 4};) Tj
+T*
+(        int k = 5;) Tj
+T*
+() Tj
+T*
+(        int[] prefix = new int[n + 1];) Tj
+T*
+() Tj
+T*
+(        // Build prefix sum) Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            prefix[i + 1] = prefix[i] + arr[i];) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        // Build prefix maximum) Tj
+T*
+(        int[] prefixMax = new int[n + 1];) Tj
+T*
+(        prefixMax[0] = prefix[0];) Tj
+T*
+() Tj
+T*
+(        for \(int i = 1; i <= n; i++\) {) Tj
+T*
+(            prefixMax[i] = Math.max\(prefixMax[i - 1], prefix[i]\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int maxLen = 0;) Tj
+T*
+() Tj
+T*
+(        for \(int i = 0; i <= n; i++\) {) Tj
+T*
+() Tj
+T*
+(            int target = prefix[i] - k;) Tj
+T*
+() Tj
+T*
+(            // Binary search: first prefixMax[j] >= target) Tj
+T*
+(            int left = 0;) Tj
+T*
+(            int right = i;) Tj
+T*
+() Tj
+T*
+(            while \(left <= right\) {) Tj
+T*
+() Tj
+T*
+(                int mid = left + \(right - left\) / 2;) Tj
+T*
+() Tj
+T*
+(                if \(prefixMax[mid] >= target\) {) Tj
+T*
+(                    right = mid - 1;) Tj
+T*
+(                } else {) Tj
+T*
+(                    left = mid + 1;) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            // left is the earliest valid j) Tj
+T*
+(            if \(left <= i\) {) Tj
+T*
+(                int len = i - left;) Tj
+T*
+(                maxLen = Math.max\(maxLen, len\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(maxLen\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Longest Subarray sum Eqls K) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Longest_Subarray_sumEqlsK.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 2461 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 5 of 41) Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Longest_Subarray_sumEqlsK{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = {1,2,-2,2,3};) Tj
+T*
+(        int k = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(        ) Tj
+T*
+(        int sum = 0;) Tj
+T*
+(        int maxLen = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<arr.length;i++\){) Tj
+T*
+(            sum = sum+arr[i];) Tj
+T*
+() Tj
+T*
+(            if\(sum == k\){) Tj
+T*
+(                maxLen = i+1;) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(map.containsKey\(sum-k\)\){) Tj
+T*
+(                int len = i - map.get\(sum - k\);//finds start of subarray) Tj
+T*
+() Tj
+T*
+(                maxLen = Math.max\(maxLen,len\);//compares maxlen and len value.) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(!map.containsKey\(sum-k\)\){) Tj
+T*
+(                map.put\(sum,i\);) Tj
+T*
+(            }) Tj
+T*
+(        } ) Tj
+T*
+() Tj
+T*
+(        System.out.print\(maxLen\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Majority Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Majority_Element.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Majority_Element{) Tj
+T*
+(    public static void  main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num, map.getOrDefault\(num,0\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int majority = n/2;) Tj
+T*
+() Tj
+T*
+(        for\(int num : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(num\) > majority\){ ) Tj
+T*
+(                System.out.println\(num\);) Tj
+T*
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 2358 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 6 of 41) Tj
+T*
+(                return;               ) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.print\("Not Found"\);) Tj
+T*
+(            ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Max Consecutive 1s) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Max_Consecutive_1s.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Max_Consecutive_1s{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int currentCount = 0;) Tj
+T*
+() Tj
+T*
+(        int maxCount = 0;) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i] == 1\){) Tj
+T*
+(                currentCount++;) Tj
+T*
+(                maxCount = Math.max\(maxCount,currentCount\);) Tj
+T*
+(            }else{) Tj
+T*
+(                currentCount = 0;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.print\(maxCount\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Max Sum Of Subarray Of Ksize) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Max_SumOfSubarray_OfKsize.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Max_SumOfSubarray_OfKsize{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        int k = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int windowSum = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<k;i++\){) Tj
+T*
+(            windowSum = windowSum+arr[i];) Tj
+T*
+ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 2386 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 7 of 41) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int max_sum = windowSum;) Tj
+T*
+() Tj
+T*
+(        for\(int i=k;i<n;i++\){) Tj
+T*
+(            windowSum = windowSum - arr[i-k]+arr[i];) Tj
+T*
+(            if\(windowSum > max_sum\){) Tj
+T*
+(                max_sum = windowSum;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.print\(max_sum\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Max Sum Subarray Of Any Size) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Max_Sum_Subarray_OfAnySize.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Max_Sum_Subarray_OfAnySize{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int currentSum = arr[0];) Tj
+T*
+(        int maxSum = arr[0];) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i] > currentSum+arr[i]\){) Tj
+T*
+(                currentSum = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(            else{) Tj
+T*
+(                currentSum += arr[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            maxSum = Math.max\(maxSum,currentSum\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(maxSum\);) Tj
+T*
+(        sc.close\(\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Merge Sorted Arrays) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Merge_Sorted_Arrays.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Merge_Sorted_Arrays{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int m = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 2202 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 8 of 41) Tj
+T*
+(        int[] arr2 = new int[m];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        for\(int i=0;i<m;i++\){) Tj
+T*
+(            arr2[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        ) Tj
+T*
+(        int k = 0;) Tj
+T*
+(        int[] result = new int[n+m];) Tj
+T*
+() Tj
+T*
+(        int i=0;) Tj
+T*
+(        int j=0;) Tj
+T*
+() Tj
+T*
+(        while\(i<arr.length && j<arr2.length\){) Tj
+T*
+(            if\(arr[i] < arr2[j]\){) Tj
+T*
+(                result[k] = arr[i];) Tj
+T*
+(                i++;) Tj
+T*
+(                k++;) Tj
+T*
+(            }else if\(arr2[j] < arr[i]\){) Tj
+T*
+(                result[k] = arr2[j];) Tj
+T*
+(                j++;) Tj
+T*
+(                k++;) Tj
+T*
+(            }else {) Tj
+T*
+(                result[k] = arr[i];) Tj
+T*
+(                k++;) Tj
+T*
+(                result[k] = arr2[j];) Tj
+T*
+(                k++;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        while\(i < arr.length\){) Tj
+T*
+(    result[k] = arr[i];) Tj
+T*
+(    i++;) Tj
+T*
+(    k++;) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(while\(j < arr2.length\){) Tj
+T*
+(    result[k] = arr2[j];) Tj
+T*
+(    j++;) Tj
+T*
+(    k++;) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(       int  h = n+m;) Tj
+T*
+(        for\(int e=0;e<h;e++\){) Tj
+T*
+(            System.out.print\(result[e] + " "\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Missing Number) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Missing_Number.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Missing_Number{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        int Expsum =0;) Tj
+T*
+ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 2339 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 9 of 41) Tj
+T*
+(        int Actsum = 0;) Tj
+T*
+(        int missing = n;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            // Expsum = Expsum+i+1;) Tj
+T*
+(            // Actsum = Actsum+arr[i];) Tj
+T*
+() Tj
+T*
+(            //  missing = Expsum - Actsum;) Tj
+T*
+() Tj
+T*
+(            //xor operation ) Tj
+T*
+(            missing = missing ^ i ^ arr[i];) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+(        System.out.print\(missing\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Move Zeroes) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Move_Zeroes.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Move_Zeroes{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int j = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i] != 0\){) Tj
+T*
+(                int temp = arr[i];) Tj
+T*
+(                arr[i] = arr[j];) Tj
+T*
+(                arr[j] = temp;) Tj
+T*
+(            j++;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            System.out.print\(arr[i] + " "\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Prefix Sum Of Subarray) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Prefix_SumOf_Subarray.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(// import java.util.*;) Tj
+T*
+() Tj
+T*
+(// public class Prefix_SumOf_Subarray{) Tj
+T*
+(//     public static void main\(String[] args\){) Tj
+T*
+(//         Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(//         int n = sc.nextInt\(\);) Tj
+T*
+(//         int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 2511 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 10 of 41) Tj
+T*
+(//         for\(int i=0;i<n;i++\){) Tj
+T*
+(//             arr[i] = sc.nextInt\(\);) Tj
+T*
+(//         }) Tj
+T*
+() Tj
+T*
+(//         int k = sc.nextInt\(\);) Tj
+T*
+(//         int sum = 0;) Tj
+T*
+(//         int count = 0;) Tj
+T*
+(//         HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(//         map.put\(0,1\);) Tj
+T*
+() Tj
+T*
+(//         for\(int x=0;x<n;x++\){) Tj
+T*
+(//             sum += arr[x];) Tj
+T*
+(//             if\(map.containsKey\(sum-k\)\){) Tj
+T*
+(//                 count = count+map.get\(sum-k\);) Tj
+T*
+(//             }) Tj
+T*
+(//             else{) Tj
+T*
+(//                 map.put\(sum, map.getOrDefault\(sum,0\)+1\);) Tj
+T*
+(//             }) Tj
+T*
+(//         }) Tj
+T*
+() Tj
+T*
+(//         System.out.print\(count\);) Tj
+T*
+(//         // System.out.print\(map\);) Tj
+T*
+(        ) Tj
+T*
+(//     }) Tj
+T*
+(// }) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Prefix_SumOf_Subarray {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+() Tj
+T*
+(        int[] arr = {1, -1, 1, 1, -1};) Tj
+T*
+(        int k = 1;) Tj
+T*
+() Tj
+T*
+(        int sum = 0;) Tj
+T*
+(        int count = 0;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer, Integer> map = new HashMap<>\(\);) Tj
+T*
+(        map.put\(0, 1\);) Tj
+T*
+() Tj
+T*
+(        for \(int i = 0; i < arr.length; i++\) {) Tj
+T*
+() Tj
+T*
+(            sum += arr[i];) Tj
+T*
+() Tj
+T*
+(            System.out.println\("\\nIndex: " + i\);) Tj
+T*
+(            System.out.println\("Element: " + arr[i]\);) Tj
+T*
+(            System.out.println\("Current Sum: " + sum\);) Tj
+T*
+() Tj
+T*
+(            int required = sum - k;) Tj
+T*
+() Tj
+T*
+(            System.out.println\("sum - k = " + required\);) Tj
+T*
+() Tj
+T*
+(            if \(map.containsKey\(required\)\) {) Tj
+T*
+() Tj
+T*
+(                count += map.get\(required\);) Tj
+T*
+() Tj
+T*
+(                System.out.println\("Found " + required + " in map"\);) Tj
+T*
+(                System.out.println\("Frequency: " + map.get\(required\)\);) Tj
+T*
+(                System.out.println\("Count: " + count\);) Tj
+T*
+() Tj
+T*
+(            } else {) Tj
+T*
+() Tj
+T*
+(                System.out.println\(required + " is NOT in map"\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            map.put\(sum, map.getOrDefault\(sum, 0\) + 1\);) Tj
+T*
+() Tj
+T*
+(            System.out.println\("Map: " + map\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("\\nFinal Answer: " + count\);) Tj
+T*
+ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 25 0 R >>
+endobj
+25 0 obj
+<< /Length 2418 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 11 of 41) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Remove Duplicates In Sorted Array) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Remove_DuplicatesIn_SortedArray.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Remove_DuplicatesIn_SortedArray{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int j = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i] != arr[j]\){) Tj
+T*
+(                j++;) Tj
+T*
+(                arr[j] = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<=j;i++\){) Tj
+T*
+(            System.out.print\(arr[i] + " "\);) Tj
+T*
+(        }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(            System.out.println\("unique element: " + \(j + 1\)\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: String Palindrome) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/String_Palindrome.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class String_Palindrome{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+() Tj
+T*
+(        str = str.replace\(" ",""\).toLowerCase\(\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        int left = 0;) Tj
+T*
+(        int right = str.length\(\)-1;) Tj
+T*
+(        boolean palindrome = true;) Tj
+T*
+() Tj
+T*
+(        while\(left < right\){) Tj
+T*
+(            if\(str.charAt\(left\) == str.charAt\(right\)\){) Tj
+T*
+(                palindrome = false;) Tj
+T*
+(            }) Tj
+T*
+(                left++;) Tj
+T*
+(                right--;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 27 0 R >>
+endobj
+27 0 obj
+<< /Length 2579 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 12 of 41) Tj
+T*
+(        if\(palindrome\){) Tj
+T*
+(            System.out.print\("Not Palindrome"\);) Tj
+T*
+(        }else{) Tj
+T*
+(            System.out.print\("Palindrome"\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Sub Array Sum Equals K) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/SubArray_Sum_EqualsK.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class SubArray_Sum_EqualsK{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(            int n = sc.nextInt\(\);) Tj
+T*
+(            int[] arr = new int[n];) Tj
+T*
+(            ) Tj
+T*
+(            for\(int i=0;i<n;i++\){) Tj
+T*
+(                arr[i] = sc.nextInt\(\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            int k = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(            int prefixSum = 0;) Tj
+T*
+(            int count = 0;) Tj
+T*
+() Tj
+T*
+(            HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(                map.put\(0,1\);) Tj
+T*
+(            for\(int i=0;i<n;i++\){) Tj
+T*
+(                prefixSum = prefixSum+arr[i];) Tj
+T*
+() Tj
+T*
+(                if\(map.containsKey\(prefixSum - k\)\){) Tj
+T*
+(                    count = count + map.get\(prefixSum - k\);) Tj
+T*
+(                }) Tj
+T*
+() Tj
+T*
+(                map.put\(prefixSum, map.getOrDefault\(prefixSum,0\)+1\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            System.out.println\(count\);) Tj
+T*
+(            System.out.print\(map\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Subarr With Eql No Ofzeroandone) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/Subarr_With_EqlNoOfzeroandone.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Subarr_With_EqlNoOfzeroandone{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 29 0 R >>
+endobj
+29 0 obj
+<< /Length 2332 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 13 of 41) Tj
+T*
+() Tj
+T*
+(        int maxLen = 0;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(        int difference = 0;) Tj
+T*
+(        map.put\(0,-1\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(           if\(arr[i] == 0\){) Tj
+T*
+(            difference--;) Tj
+T*
+(           } ) Tj
+T*
+(           if\(arr[i] == 1\){) Tj
+T*
+(            difference++;) Tj
+T*
+(           }) Tj
+T*
+() Tj
+T*
+(           if\(map.containsKey\(difference\)\){) Tj
+T*
+(            int len = i-map.get\(difference\);) Tj
+T*
+(            maxLen = Math.max\(maxLen,len\);) Tj
+T*
+(           }else) Tj
+T*
+(                map.put\(difference,i\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(maxLen\);) Tj
+T*
+(        System.out.print\(map\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Subarray Sum Div BYK) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Digital/SubarraySum_Div_BYK.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class SubarraySum_Div_BYK{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int k =sc.nextInt\(\);) Tj
+T*
+(        int sum = 0;) Tj
+T*
+(        int count = 0;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        map.put\(0,1\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            sum = sum+arr[i];) Tj
+T*
+(            int remainder = sum%k;) Tj
+T*
+() Tj
+T*
+(            if\(map.containsKey\(remainder\)\){) Tj
+T*
+(                count = count+map.get\(remainder\);) Tj
+T*
+(            }) Tj
+T*
+(        map.put\(remainder,map.getOrDefault\(remainder,0\)+1\);) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.print\(count\);) Tj
+T*
+(        System.out.print\(map\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 31 0 R >>
+endobj
+31 0 obj
+<< /Length 2693 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 14 of 41) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Anagram) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/Anagram.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Anagram{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str1 = sc.nextLine\(\);) Tj
+T*
+(        char[] ch1 = str1.toCharArray\(\); ) Tj
+T*
+(        String str2 = sc.nextLine\(\);) Tj
+T*
+(        char[] ch2 = str2.toCharArray\(\); ) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        HashMap<Character,Integer> map1 = new HashMap<>\(\);) Tj
+T*
+(        HashMap<Character,Integer> map2 = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(Character ch : ch1\){) Tj
+T*
+(            if\(map1.containsKey\(ch\)\){) Tj
+T*
+(                map1.put\(ch ,map1.get\(ch\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map1.put\(ch,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        for\(Character ch : ch2\){) Tj
+T*
+(            if\(map2.containsKey\(ch\)\){) Tj
+T*
+(                map2.put\(ch,map2.get\(ch\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map2.put\(ch,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(       ) Tj
+T*
+(    //    String res = map1.equals\(map2\) ? "true" : "false";) Tj
+T*
+(        System.out.println\(map1.equals\(map2\)\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Count distinct elmnts) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/Count_distinct_elmnts.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class  Count_distinct_elmnts{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            map.put\(num,1\);//HashMap does not allow duplicate elements) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(map.size\(\)\);//so it will print unique element array size.) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 33 0 R >>
+endobj
+33 0 obj
+<< /Length 2582 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 15 of 41) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Duplicate Elmnt) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/Duplicate_Elmnt.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Duplicate_Elmnt{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap <Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int key : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(key\) > 1\){) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: First Non Reapeating Character) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/First_Non_Reapeating_Character.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class First_Non_Reapeating_Character {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        char[] ch = str.toCharArray\(\);) Tj
+T*
+(        boolean found = false;) Tj
+T*
+() Tj
+T*
+(        HashMap<Character, Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for \(char cha : ch\) {) Tj
+T*
+(            if \(map.containsKey\(cha\)\) {) Tj
+T*
+(                map.put\(cha, map.get\(cha\) + 1\);) Tj
+T*
+(            } else {) Tj
+T*
+(                map.put\(cha, 1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for \(char key : ch\) {) Tj
+T*
+(            if \(map.get\(key\) == 1\) {) Tj
+T*
+(                found = true;) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 35 0 R >>
+endobj
+35 0 obj
+<< /Length 2629 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 16 of 41) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        if \(!found\) {) Tj
+T*
+(            System.out.println\("Not Found"\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequency Of Character) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/FrequencyOfCharacter.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class FrequencyOfCharacter{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        char[] ch = str.toCharArray\(\);) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        char maxchar = ' ';) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        HashMap<Character,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(char cha : ch\){) Tj
+T*
+(            if\(map.containsKey\(cha\)\){) Tj
+T*
+(                map.put\(cha, map.get\(cha\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(cha,1\);) Tj
+T*
+(            }) Tj
+T*
+(            // if\(map.get\(cha\) > max\){) Tj
+T*
+(            //     max = map.get\(cha\);) Tj
+T*
+(            // }) Tj
+T*
+() Tj
+T*
+(            // OR) Tj
+T*
+(            max = Math.max\(max,map.get\(cha\)\);//prints maximum frequency of character in a string) Tj
+T*
+(            maxchar = \(char\) Math.max\(maxchar, cha\); // prints character with highest ascii value.) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(map\);//prints number of occurance of each character ) Tj
+T*
+(        System.out.println\(max\);//prints maximum repeated charactere in value) Tj
+T*
+(        System.out.println\(maxchar\);//prints character with maximum ascii value.) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequency Of Numbers) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/FrequencyOfNumbers.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class FrequencyOfNumbers {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        ) Tj
+T*
+ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 37 0 R >>
+endobj
+37 0 obj
+<< /Length 2468 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 17 of 41) Tj
+T*
+(        int[] arr = {2,2,2,3,3,2};) Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            max = Math.max\(max,map.get\(num\)\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(map\);) Tj
+T*
+(        System.out.println\(max\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequency Of Words) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/FrequencyOfWords.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class FrequencyOfWords {) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        int max = 0;) Tj
+T*
+() Tj
+T*
+(        HashMap<String, Integer> map = new HashMap<>\(\);) Tj
+T*
+(        String[] split = str.split\(" "\);) Tj
+T*
+() Tj
+T*
+(        for \(String word : split\) {) Tj
+T*
+(            if \(map.containsKey\(word\)\) {) Tj
+T*
+(                map.put\(word, map.get\(word\) + 1\);) Tj
+T*
+(            } else {) Tj
+T*
+(                map.put\(word, 1\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        for \(String key : map.keySet\(\)\) {) Tj
+T*
+(            max = Math.max\(max, map.get\(key\)\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(map\);) Tj
+T*
+() Tj
+T*
+(        System.out.println\(max\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequency Using Hashmap) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/FrequencyUsingHashmap.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class FrequencyUsingHashmap{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 39 0 R >>
+endobj
+39 0 obj
+<< /Length 2472 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 18 of 41) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num, map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(map\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequent Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/FrequentElement.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class FrequentElement{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\); ) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        int maxEl = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(                arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+() Tj
+T*
+(            }else) Tj
+T*
+(              map.put\(num,1\);) Tj
+T*
+(              ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int key : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(key\) > max\){) Tj
+T*
+(                max = map.get\(key\);) Tj
+T*
+(                maxEl = key;) Tj
+T*
+(              }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(map\);) Tj
+T*
+(        System.out.println\(max\);) Tj
+T*
+(        System.out.println\(maxEl\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Majority Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/Majority_Element.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+ET
+endstream
+endobj
+40 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 41 0 R >>
+endobj
+41 0 obj
+<< /Length 2563 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 19 of 41) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Majority_Element{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        int maxEl = 0;) Tj
+T*
+(        for\(int key : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(key\) > n/2\){) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+(                ) Tj
+T*
+(            }) Tj
+T*
+(                System.out.println\(max\);) Tj
+T*
+(                System.out.println\(maxEl\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Top K Frequent Elmnts) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/TopK_Frequent_Elmnts.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class TopK_Frequent_Elmnts {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int k = 2;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer, Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for \(int num : arr\) {) Tj
+T*
+(            if \(map.containsKey\(num\)\) {) Tj
+T*
+(                map.put\(num, map.get\(num\) + 1\);) Tj
+T*
+(            } else {) Tj
+T*
+(                map.put\(num, 1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>\(\(a, b\) -> a.getValue\(\) -) Tj
+T*
+(    b.getValue\(\)\);) Tj
+T*
+ET
+endstream
+endobj
+42 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 43 0 R >>
+endobj
+43 0 obj
+<< /Length 2485 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 20 of 41) Tj
+T*
+() Tj
+T*
+(        for \(Map.Entry<Integer,Integer> entry : map.entrySet\(\)\) {) Tj
+T*
+(            System.out.println\(entry.getKey\(\) + " " + entry.getValue\(\)\);) Tj
+T*
+(            pq.offer\(entry\);) Tj
+T*
+(            if \(pq.size\(\) > k\) {) Tj
+T*
+(                pq.poll\(\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        while\(!pq.isEmpty\(\)\){) Tj
+T*
+(            System.out.println\(pq.poll\(\).getKey\(\)\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Two Sum) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: HashMap/Two_Sum.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Two_Sum{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+(        int target = sc.nextInt\(\);) Tj
+T*
+(        boolean found = false;) Tj
+T*
+() Tj
+T*
+(        HashMap <Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        int res = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            res = target - arr[i];) Tj
+T*
+(            if\(map.containsKey\(res\)\){) Tj
+T*
+(                found = true;) Tj
+T*
+(                System.out.println\(map.get\(res\) + " " + i\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(arr[i],i\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Kth Largest Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Heap/Kth_Largest_Element.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Kth_Largest_Element{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = {3,2,1,5,6,4};) Tj
+T*
+(        int k = 2;) Tj
+T*
+ET
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 45 0 R >>
+endobj
+45 0 obj
+<< /Length 2408 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 21 of 41) Tj
+T*
+() Tj
+T*
+(        PriorityQueue<Integer> pq = new PriorityQueue<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            pq.add\(num\);) Tj
+T*
+() Tj
+T*
+(            if\(pq.size\(\) > k\){) Tj
+T*
+(                pq.poll\(\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(pq.peek\(\)\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Max Heap Demo) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Heap/MaxHeapDemo.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class MaxHeapDemo{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        PriorityQueue<Integer> maxHeap = new PriorityQueue<>\(Collections.reverseOrder\(\)\);) Tj
+T*
+(        maxHeap.add\(30\);) Tj
+T*
+(        maxHeap.add\(40\);) Tj
+T*
+(        maxHeap.add\(50\);) Tj
+T*
+(        maxHeap.add\(10\);) Tj
+T*
+() Tj
+T*
+(        System.out.println\(maxHeap.peek\(\)\);) Tj
+T*
+(        System.out.println\(maxHeap.poll\(\)\);) Tj
+T*
+(        System.out.println\(maxHeap.peek\(\)\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Min Heap Demo) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Heap/MinHeapDemo.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class MinHeapDemo{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        PriorityQueue<Integer> pq = new PriorityQueue<>\(\);) Tj
+T*
+() Tj
+T*
+(        pq.add\(40\);) Tj
+T*
+(        pq.add\(30\);) Tj
+T*
+(        pq.add\(5\);) Tj
+T*
+(        pq.add\(15\);) Tj
+T*
+() Tj
+T*
+(        System.out.println\(pq\);) Tj
+T*
+(        System.out.println\(pq.peek\(\)\);) Tj
+T*
+() Tj
+T*
+(        pq.poll\(\); ) Tj
+T*
+(        ) Tj
+T*
+(        System.out.println\(pq.peek\(\)\);) Tj
+T*
+(        ) Tj
+T*
+ET
+endstream
+endobj
+46 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 47 0 R >>
+endobj
+47 0 obj
+<< /Length 2433 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 22 of 41) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(//output : [5,15,30,40]) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Top K Freq Elements) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: Heap/TopK_Freq_Elements.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class   {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int[] arr = {1, 1, 1, 2, 2, 5, 5, 5, 3};) Tj
+T*
+(        int k = 2;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer, Integer> hmap = new HashMap<>\(\);) Tj
+T*
+(        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>\(\(a, b\) -> a.getValue\(\) -) Tj
+T*
+(    b.getValue\(\)\);) Tj
+T*
+() Tj
+T*
+(        for \(int num : arr\) {) Tj
+T*
+(            hmap.put\(num, hmap.getOrDefault\(num, 0\) + 1\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(hmap\); ) Tj
+T*
+() Tj
+T*
+(        for \(Map.Entry<Integer, Integer> entry : hmap.entrySet\(\)\) {) Tj
+T*
+(            System.out.println\(entry.getKey\(\) + " " + entry.getValue\(\)\);) Tj
+T*
+() Tj
+T*
+(            pq.offer\(entry\);) Tj
+T*
+() Tj
+T*
+(            if \(pq.size\(\) > k\) {) Tj
+T*
+(                pq.poll\(\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        while \(!pq.isEmpty\(\)\) {) Tj
+T*
+(            System.out.println\(pq.poll\(\).getKey\(\)\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Best time To Buy Sell) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Best_timeToBuySell.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Best_timeToBuySell{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+48 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 49 0 R >>
+endobj
+49 0 obj
+<< /Length 2632 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 23 of 41) Tj
+T*
+(        int minPrice = arr[0];) Tj
+T*
+(        int maxProfit = 0;) Tj
+T*
+() Tj
+T*
+(        int tempBuyDay = 0;) Tj
+T*
+(        int buyDay = 0;) Tj
+T*
+(        int sellDay = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(arr[i] < minPrice\){) Tj
+T*
+(                minPrice = arr[i];) Tj
+T*
+(                tempBuyDay = i;) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            int profit = arr[i] - minPrice;) Tj
+T*
+(            if\(profit > maxProfit\){) Tj
+T*
+(                maxProfit = profit;) Tj
+T*
+(                buyDay = tempBuyDay;) Tj
+T*
+(                sellDay = i;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("Best time to Buy at a day is: " + buyDay\);) Tj
+T*
+(        System.out.println\("Best time to sell at a Day is: " + sellDay\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Count distinct elmnts) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Count_distinct_elmnts.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class  Count_distinct_elmnts{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            map.put\(num,1\);//HashMap does not allow duplicate elements) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(map.size\(\)\);//so it will print unique element array size.) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Duplicate Elmnt) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Duplicate_Elmnt.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Duplicate_Elmnt{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+ET
+endstream
+endobj
+50 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 51 0 R >>
+endobj
+51 0 obj
+<< /Length 2480 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 24 of 41) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap <Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int key : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(key\) > 1\){) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: First Non Reapeating Character) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/First_Non_Reapeating_Character.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class First_Non_Reapeating_Character {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        char[] ch = str.toCharArray\(\);) Tj
+T*
+(        boolean found = false;) Tj
+T*
+() Tj
+T*
+(        HashMap<Character, Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for \(char cha : ch\) {) Tj
+T*
+(            if \(map.containsKey\(cha\)\) {) Tj
+T*
+(                map.put\(cha, map.get\(cha\) + 1\);) Tj
+T*
+(            } else {) Tj
+T*
+(                map.put\(cha, 1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for \(char key : ch\) {) Tj
+T*
+(            if \(map.get\(key\) == 1\) {) Tj
+T*
+(                found = true;) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        if \(!found\) {) Tj
+T*
+(            System.out.println\("Not Found"\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Frequency Of Numbers) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/FrequencyOfNumbers.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+52 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 53 0 R >>
+endobj
+53 0 obj
+<< /Length 2461 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 25 of 41) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class FrequencyOfNumbers {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        ) Tj
+T*
+(        int[] arr = {2,2,2,3,3,2};) Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            max = Math.max\(max,map.get\(num\)\);) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\(map\);) Tj
+T*
+(        System.out.println\(max\);) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Longest Consecutive Seqnce) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Longest_Consecutive_Seqnce.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Longest_Consecutive_Seqnce{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("Longest consecutive sequence lenght is : "  + longestConsecutive\(arr\) \);) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+(    public static int longestConsecutive\(int[] nums\){) Tj
+T*
+() Tj
+T*
+(        HashSet<Integer> set = new HashSet<>\(\);) Tj
+T*
+(        for\(int num : nums\){) Tj
+T*
+(            set.add\(num\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int longest = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int num : set\){) Tj
+T*
+(            if\(!set.contains\(num-1\)\){) Tj
+T*
+(                int currentNum = num;) Tj
+T*
+(                int count = 1;) Tj
+T*
+(            while\(set.contains\(currentNum + 1\)\){) Tj
+T*
+(                currentNum++;) Tj
+T*
+(                count++;) Tj
+T*
+(            }) Tj
+T*
+(            longest = Math.max\(longest, count\);) Tj
+T*
+(            }) Tj
+T*
+ET
+endstream
+endobj
+54 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 55 0 R >>
+endobj
+55 0 obj
+<< /Length 2416 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 26 of 41) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+(        return longest;) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Majority Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Majority_Element.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Majority_Element{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int num : arr\){) Tj
+T*
+(            if\(map.containsKey\(num\)\){) Tj
+T*
+(                map.put\(num,map.get\(num\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(num,1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        int max = 0;) Tj
+T*
+(        int maxEl = 0;) Tj
+T*
+(        for\(int key : map.keySet\(\)\){) Tj
+T*
+(            if\(map.get\(key\) > n/2\){) Tj
+T*
+(                System.out.println\(key\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+(                ) Tj
+T*
+(            }) Tj
+T*
+(                System.out.println\(max\);) Tj
+T*
+(                System.out.println\(maxEl\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Max Subarray Sum) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Max_Subarray_Sum.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Max_Subarray_Sum{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int Final_sum = max_subarray_sum\(arr\);) Tj
+T*
+ET
+endstream
+endobj
+56 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 57 0 R >>
+endobj
+57 0 obj
+<< /Length 2512 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 27 of 41) Tj
+T*
+() Tj
+T*
+(        System.out.println\("Maximum sub array sum is: " + Final_sum\);) Tj
+T*
+() Tj
+T*
+(       ) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+(    public static int max_subarray_sum\(int[] nums\){) Tj
+T*
+(        int currentSum = nums[0];) Tj
+T*
+(        int maxSum = nums[0];) Tj
+T*
+(        int tempStart = 0;) Tj
+T*
+(        int start = 0;) Tj
+T*
+(        int end = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<nums.length;i++\){) Tj
+T*
+(           ) Tj
+T*
+(            if\(nums[i] > currentSum + nums[i]\){) Tj
+T*
+(                currentSum = nums[i];) Tj
+T*
+(                tempStart = i;) Tj
+T*
+(            }) Tj
+T*
+(            else{) Tj
+T*
+(                currentSum = currentSum + nums[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(currentSum > maxSum\){) Tj
+T*
+(                maxSum = currentSum;) Tj
+T*
+(                start = tempStart;) Tj
+T*
+(                end = i;) Tj
+T*
+(            }) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+(            for\(int j=start;j<=end;j++\){) Tj
+T*
+(            System.out.print\(nums[j] + " "\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            ) Tj
+T*
+(    return maxSum;) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Merge Intervals) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Merge_Intervals.java) Tj
+T*
+(Time complexity: O\(n log n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Merge_Intervals{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[][] intervals = new int[n][2];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            for\(int j=0;j<2;j++\){) Tj
+T*
+(            intervals[i][j] = sc.nextInt\(\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        Arrays.sort\(intervals, \(a,b\) -> a[0] - b[0]\); //sorts the array which compares two intervals at) Tj
+T*
+(    a time ) Tj
+T*
+(        //if result < 0 --> a comes before b || result > 0 --> b comes before a || result == 0 then both) Tj
+T*
+(    are considered equal in sort order) Tj
+T*
+() Tj
+T*
+(        List<int[]> result = new ArrayList<>\(\);) Tj
+T*
+() Tj
+T*
+(        result.add\(intervals[0]\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<intervals.length;i++\){) Tj
+T*
+ET
+endstream
+endobj
+58 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 59 0 R >>
+endobj
+59 0 obj
+<< /Length 2520 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 28 of 41) Tj
+T*
+(        int[] current = intervals[i];) Tj
+T*
+(        int[] last = result.get\(result.size\(\)-1\);) Tj
+T*
+(        ) Tj
+T*
+(        if\(current[0] <= last[1]\){) Tj
+T*
+(            last[1] = Math.max\(last[1],current[1]\);) Tj
+T*
+(        }else{) Tj
+T*
+(            result.add\(current\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int[][] ans = new int[result.size\(\)][2];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<result.size\(\);i++\){) Tj
+T*
+(            ans[i] = result.get\(i\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<ans.length;i++\){) Tj
+T*
+(            System.out.println\(ans[i][0] + " " + ans[i][1]\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(         ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Mirror Pattern) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Mirror_Pattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Mirror_Pattern {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        // for\(int i=0;i<n;i++\){) Tj
+T*
+(        //     int num = n-i;) Tj
+T*
+(        //     for\(int j=0;j<=i;j++\){) Tj
+T*
+(        //         System.out.print\(num\);) Tj
+T*
+(        //      System.out.print\(0\);) Tj
+T*
+(        //     num++;) Tj
+T*
+(        //     }) Tj
+T*
+(        //     System.out.println\(\);) Tj
+T*
+(        // }) Tj
+T*
+(        //     int num = 1;) Tj
+T*
+(        // for\(int i=0;i<n;i++\){) Tj
+T*
+(        //     for\(int j=0;j<=i;j++\){) Tj
+T*
+(        //         System.out.print\(num\);) Tj
+T*
+(        //     }) Tj
+T*
+(        //     System.out.println\(\);) Tj
+T*
+(        //     num++;) Tj
+T*
+(        // }) Tj
+T*
+(        // for\(int i=0;i<n;i++\){) Tj
+T*
+(        //     for\(int j=1;j<=n-i;j++\){) Tj
+T*
+(        //         System.out.print\(j\);) Tj
+T*
+(        //     }) Tj
+T*
+(        //     System.out.println\(""\);) Tj
+T*
+(        // }) Tj
+T*
+(        // for\(int i=1;i<=n;i++\){) Tj
+T*
+(        //     for\(int j=1;j<=i;j++\){) Tj
+T*
+(        //         System.out.print\(i\);) Tj
+T*
+(        //     }) Tj
+T*
+(        //     System.out.println\(""\);) Tj
+T*
+(        // }) Tj
+T*
+ET
+endstream
+endobj
+60 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 61 0 R >>
+endobj
+61 0 obj
+<< /Length 2461 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 29 of 41) Tj
+T*
+(        // for \(int i = 1; i <= n; i++\) {) Tj
+T*
+(        //     for \(int s = 1; s <= n - i; s++\) {) Tj
+T*
+(        //         System.out.print\(" "\);) Tj
+T*
+(        //     }) Tj
+T*
+(        //     for \(int k = 1; k <= i; k++\) {) Tj
+T*
+(        //         System.out.print\(k\);) Tj
+T*
+(        //     }) Tj
+T*
+(        //     for\(int j=i-1;j>=1;j--\)) Tj
+T*
+(        //        System.out.print\(j\);) Tj
+T*
+(        //         // num++;) Tj
+T*
+(        //     System.out.println\(\);) Tj
+T*
+(        // }) Tj
+T*
+(        for \(int i = 1; i <= 5; i++\) {) Tj
+T*
+(            for\(int s = 1; s<=n-i;s++\){) Tj
+T*
+(                System.out.print\(" "\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if \(i == 1\) {) Tj
+T*
+(                System.out.println\(0\); ) Tj
+T*
+(            }else {) Tj
+T*
+() Tj
+T*
+(                for \(int k = n - i + 2; k <= 5; k++\) {) Tj
+T*
+(                    System.out.print\(k\);) Tj
+T*
+(                }) Tj
+T*
+() Tj
+T*
+(                System.out.print\(0\);) Tj
+T*
+() Tj
+T*
+(                for \(int j = 5; j >= n - i + 2; j--\) {) Tj
+T*
+(                    System.out.print\(j\);) Tj
+T*
+(                }) Tj
+T*
+(                System.out.println\(""\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Move Zeroes) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Move_Zeroes.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(public class Move_Zeroes{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int j = 0;//it points to next position) Tj
+T*
+(        for\(int i=0;i<n;i++\){//it points to current position) Tj
+T*
+(            if\(arr[i] != 0\){) Tj
+T*
+(                int temp = arr[i];) Tj
+T*
+(                arr[i] = arr[j];) Tj
+T*
+(                arr[j] = temp;) Tj
+T*
+(                j++;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+62 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 63 0 R >>
+endobj
+63 0 obj
+<< /Length 2347 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 30 of 41) Tj
+T*
+(        for\(int index : arr\){) Tj
+T*
+(            System.out.print\(index + " "\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Pattern) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Pattern.java) Tj
+T*
+(Time complexity: O\(n?\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Pattern{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(        for\(int i=1;i<=n;i++\){) Tj
+T*
+(            for\(int j=1;j<=i;j++\){) Tj
+T*
+(                System.out.print\(j\);) Tj
+T*
+(                ) Tj
+T*
+(            }) Tj
+T*
+(            System.out.println\(\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Product Of arr Expt Self) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Product_Of_arr_Expt_Self.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Product_Of_arr_Expt_Self {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+() Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int[] left = new int[n];) Tj
+T*
+(        int[] right = new int[n];) Tj
+T*
+() Tj
+T*
+(        left[0] = 1;) Tj
+T*
+(        right[n - 1] = 1;) Tj
+T*
+() Tj
+T*
+(        for \(int i = 1; i < n; i++\) {) Tj
+T*
+(            left[i] = left[i - 1] * arr[i - 1];) Tj
+T*
+(        }) Tj
+T*
+(        for \(int i = n - 2; i >= 0; i--\) {) Tj
+T*
+(            right[i] = right[i + 1] * arr[i + 1];) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int[] ans = new int[n];) Tj
+T*
+(        System.out.print\("Product of array Except Self is: "\);) Tj
+T*
+ET
+endstream
+endobj
+64 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 65 0 R >>
+endobj
+65 0 obj
+<< /Length 2548 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 31 of 41) Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            ans[i] = left[i] * right[i];) Tj
+T*
+(            System.out.print\(ans[i] + " "\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Remove Duplicates) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Remove_Duplicates.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Remove_Duplicates {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        String str = sc.next\(\);) Tj
+T*
+() Tj
+T*
+(        // for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(        //     boolean duplicate = false;) Tj
+T*
+(        //     for\(int j=0;j<i;j++\){) Tj
+T*
+(        //         if\(str.charAt\(i\) == str.charAt\(j\)\){) Tj
+T*
+(        //             duplicate = true;) Tj
+T*
+(        //             break;) Tj
+T*
+(        //         }) Tj
+T*
+(        //     }) Tj
+T*
+(        //     if\(!duplicate\){) Tj
+T*
+(        //         System.out.print\(str.charAt\(i\)\);// complexity = O\(n^2\)) Tj
+T*
+(        //     }) Tj
+T*
+(        // }) Tj
+T*
+() Tj
+T*
+(        // int[] freq = new int[26];) Tj
+T*
+() Tj
+T*
+(        // for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(        //     char ch = str.charAt\(i\);) Tj
+T*
+(        //     if\(freq[ch - 'a'] == 0\){) Tj
+T*
+(        //         System.out.print\(ch\); // complexity = O\(n\), space = O\(1\)) Tj
+T*
+(        //         freq[ch - 'a']++;) Tj
+T*
+(        //     }) Tj
+T*
+(        // }) Tj
+T*
+() Tj
+T*
+(        HashSet<Character> hs = new HashSet<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(            char ch = str.charAt\(i\);) Tj
+T*
+() Tj
+T*
+(            if\(!hs.contains\(ch\)\){) Tj
+T*
+(                System.out.print\(ch\);) Tj
+T*
+(                hs.add\(ch\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Remove Repeated Digits) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Remove_Repeated_Digits.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+66 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 67 0 R >>
+endobj
+67 0 obj
+<< /Length 2416 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 32 of 41) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(public class Remove_Repeated_Digits{) Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n1 = sc.nextInt\(\);) Tj
+T*
+(        int n2 = sc.nextInt\(\);) Tj
+T*
+(        ) Tj
+T*
+() Tj
+T*
+(        for\(int i=n1; i<=n2;i++\){) Tj
+T*
+(            int last = i%10;) Tj
+T*
+(            int remain = i/10;) Tj
+T*
+(            if\(last != remain\){ System.out.print\(i + " "\);) Tj
+T*
+(            }) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Secnd Large) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Secnd_Large.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Secnd_Large{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int Largest = arr[0];) Tj
+T*
+(        int Second = 0;) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(arr[i] > Largest\){) Tj
+T*
+(                Second = Largest;) Tj
+T*
+(                Largest = arr[i];) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(arr[i] > Second && arr[i] != Largest \){) Tj
+T*
+(                Second = arr[i];) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\("Largest: " + "" + Largest + "Second Largest " + Second\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Top K Frequent Elmnts) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/TopK_Frequent_Elmnts.java) Tj
+T*
+(Time complexity: O\(n log k\) in the common Top-K/heap approach) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class TopK_Frequent_Elmnts {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+ET
+endstream
+endobj
+68 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 69 0 R >>
+endobj
+69 0 obj
+<< /Length 2563 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 33 of 41) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int k = 2;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer, Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for \(int num : arr\) {) Tj
+T*
+(            if \(map.containsKey\(num\)\) {) Tj
+T*
+(                map.put\(num, map.get\(num\) + 1\);) Tj
+T*
+(            } else {) Tj
+T*
+(                map.put\(num, 1\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>\(\(a, b\) -> a.getValue\(\) -) Tj
+T*
+(    b.getValue\(\)\);) Tj
+T*
+() Tj
+T*
+(        for \(Map.Entry<Integer,Integer> entry : map.entrySet\(\)\) {) Tj
+T*
+(            System.out.println\(entry.getKey\(\) + " " + entry.getValue\(\)\);) Tj
+T*
+(            pq.offer\(entry\);) Tj
+T*
+(            if \(pq.size\(\) > k\) {) Tj
+T*
+(                pq.poll\(\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        while\(!pq.isEmpty\(\)\){) Tj
+T*
+(            System.out.println\(pq.poll\(\).getKey\(\)\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Two Sum) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/Two_Sum.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+(public class Two_Sum{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int target = sc.nextInt\(\);) Tj
+T*
+(        boolean found = false;) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            int res = target - arr[i];) Tj
+T*
+(            if\(map.containsKey\(res\)\){) Tj
+T*
+(                found = true;) Tj
+T*
+(                System.out.println\(map.get\(res\) + " " + i\);) Tj
+T*
+(            }) Tj
+T*
+(            else{) Tj
+T*
+(                map.put\(arr[i],i\);  ) Tj
+T*
+ET
+endstream
+endobj
+70 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 71 0 R >>
+endobj
+71 0 obj
+<< /Length 2379 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 34 of 41) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(// class Solution {) Tj
+T*
+(//     public int[] twoSum\(int[] nums, int target\) {) Tj
+T*
+(//         // your code) Tj
+T*
+(// HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+() Tj
+T*
+(//         for\(int i=0;i<nums.length;i++\){) Tj
+T*
+(//             boolean found = false;) Tj
+T*
+(//             int res = target - nums[i];) Tj
+T*
+(//             if\(map.containsKey\(res\)\){) Tj
+T*
+(//                 found = true;) Tj
+T*
+(//                return new int[]{map.get\(res\),i};) Tj
+T*
+(//             }else{) Tj
+T*
+(//                 map.put\(nums[i],i\);) Tj
+T*
+(//             }) Tj
+T*
+(//         }) Tj
+T*
+(//         return new int[]{};) Tj
+T*
+(//     }) Tj
+T*
+() Tj
+T*
+(//     public static void main\(String[] args\){) Tj
+T*
+(//         Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(//         int n = sc.nextInt\(\);) Tj
+T*
+(//         int[] arr = new int[n];) Tj
+T*
+(//         for\(int i=0;i<n;i++\){) Tj
+T*
+(//             arr[i] = sc.nextInt\(\);) Tj
+T*
+(//         }) Tj
+T*
+() Tj
+T*
+(//         int target = sc.nextInt\(\);) Tj
+T*
+(//         Solution obj = new Solution\(\);) Tj
+T*
+(//         obj.twoSum\(arr,target\);) Tj
+T*
+(//     }) Tj
+T*
+(// }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: All Peak Elemnt) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/All_Peak_Elemnt.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class All_Peak_Elemnt{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        ArrayList<Integer> al = new ArrayList<>\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            boolean left_Check = \(i == 0 || arr[i] > arr[i-1]\);) Tj
+T*
+(            boolean right_check = \(i == n-1 || arr[i] > arr[i+1]\);) Tj
+T*
+ET
+endstream
+endobj
+72 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 73 0 R >>
+endobj
+73 0 obj
+<< /Length 2444 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 35 of 41) Tj
+T*
+() Tj
+T*
+(            if\(left_Check && right_check\){) Tj
+T*
+(                al.add\(i\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        if\(al.isEmpty\(\)\){) Tj
+T*
+(            System.out.println\("Not found"\);) Tj
+T*
+(        }else{) Tj
+T*
+(            System.out.println\(al\);//returns peak element index.) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int index : al\){) Tj
+T*
+(            System.out.println\("corresponding index " + arr[index]\);//returns arry value) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: First Non Repeating Char) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/First_Non_Repeating_Char.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class First_Non_Repeating_Char{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        String str = sc.nextLine\(\);) Tj
+T*
+(        char[] ch = str.toCharArray\(\);) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<str.length\(\);i++\){) Tj
+T*
+(        boolean found = false;) Tj
+T*
+(           for\(int j=0;j<str.length\(\);j++\){) Tj
+T*
+(                if\(i != j && ch[i] == ch[j]\){) Tj
+T*
+(                    found = true;) Tj
+T*
+(                    break;) Tj
+T*
+(                }) Tj
+T*
+(           }) Tj
+T*
+(           if\(!found\){) Tj
+T*
+(            System.out.print\(ch[i]\);) Tj
+T*
+(            break;) Tj
+T*
+(           }) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Leaders in Array) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Leaders_in_Array.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Leaders_in_Array{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+ET
+endstream
+endobj
+74 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 75 0 R >>
+endobj
+75 0 obj
+<< /Length 2476 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 36 of 41) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            boolean leader = false;) Tj
+T*
+(            for\(int j=1;j<n;j++\){) Tj
+T*
+(                if\(arr[i] > arr[j]\){) Tj
+T*
+(                    leader = true;) Tj
+T*
+(                }) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(leader\){) Tj
+T*
+(                System.out.println\(arr[i]\);) Tj
+T*
+(                return;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Majority Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Majority_Element.java) Tj
+T*
+(Time complexity: O\(n\) average case) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.HashMap;) Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+(public class Majority_Element{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int majority = n/2;) Tj
+T*
+() Tj
+T*
+(        // for\(int i=0;i<n;i++\){) Tj
+T*
+(        //     int count = 0;) Tj
+T*
+(        //     for\(int j=0;j<n;j++\){) Tj
+T*
+(        //         if\(arr[i] == arr[j]\){) Tj
+T*
+(        //             count++;) Tj
+T*
+(        //         }) Tj
+T*
+(        //     }) Tj
+T*
+(        //     if\(count > majority\){) Tj
+T*
+(        //         System.out.print\(arr[i]\);) Tj
+T*
+(        //         return;) Tj
+T*
+(        //     }) Tj
+T*
+(        // }) Tj
+T*
+() Tj
+T*
+(        HashMap<Integer,Integer> map = new HashMap<>\(\);) Tj
+T*
+(        ) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            if\(map.containsKey\(arr[i]\)\){) Tj
+T*
+(                map.put\(arr[i], map.getOrDefault\(arr[i],0\)+1\);) Tj
+T*
+(            }else{) Tj
+T*
+(                map.put\(arr[i],1\);) Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            if\(map.get\(arr[i]\) > majority\){) Tj
+T*
+(                System.out.print\(arr[i]\);) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        // System.out.print\(map + " "\);) Tj
+T*
+ET
+endstream
+endobj
+76 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 77 0 R >>
+endobj
+77 0 obj
+<< /Length 2343 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 37 of 41) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Move Zeroes) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Move_Zeroes.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Move_Zeroes{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(            int j = 0;) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(                if\(arr[i] != 0\){) Tj
+T*
+(                    int temp = arr[i];) Tj
+T*
+(                    arr[i] = arr[j];) Tj
+T*
+(                    arr[j] = temp; ) Tj
+T*
+(                    j++;) Tj
+T*
+(                }      ) Tj
+T*
+() Tj
+T*
+(            }) Tj
+T*
+() Tj
+T*
+(            for\(int i=0;i<n;i++\){) Tj
+T*
+(                System.out.print\(arr[i] + " "\);) Tj
+T*
+(            }) Tj
+T*
+(          ) Tj
+T*
+(        ) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Peak Element) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Peak_Element.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Peak_Element {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int peak_index = -1;) Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            boolean leftCheck = \(i == 0 || arr[i] > arr[i - 1]\);) Tj
+T*
+(            boolean rightCheck = \(i == n - 1 || arr[i] > arr[i + 1]\);) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+78 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 79 0 R >>
+endobj
+79 0 obj
+<< /Length 2407 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 38 of 41) Tj
+T*
+(            if \(leftCheck && rightCheck\) {) Tj
+T*
+(                peak_index = i;) Tj
+T*
+(                break;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        if \(peak_index != -1\) {) Tj
+T*
+(            System.out.println\(peak_index\);//returns index of value which is peak element\(which is) Tj
+T*
+(    greater than it neigbors\)) Tj
+T*
+(        } else {) Tj
+T*
+(            System.out.println\("No peak Elements found"\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Peak Elemnt BS) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Peak_Elemnt_BS.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Peak_Elemnt_BS {) Tj
+T*
+() Tj
+T*
+(    public static void main\(String[] args\) {) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for \(int i = 0; i < n; i++\) {) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int peak_index = find_Peak\(arr\);) Tj
+T*
+() Tj
+T*
+(        System.out.println\("index of peak element is" + " " + peak_index + " value is " + " " +) Tj
+T*
+(    arr[peak_index]\);) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+(    public static int find_Peak\(int[] arr\) {) Tj
+T*
+(        int low = 0;) Tj
+T*
+(        int high = arr.length - 1;) Tj
+T*
+() Tj
+T*
+(        while \(low < high\) {) Tj
+T*
+(            int mid = low + \(high - low\) / 2;) Tj
+T*
+(            if \(arr[mid] < arr[mid + 1]\) {) Tj
+T*
+(                low = mid + 1;) Tj
+T*
+(            } else {) Tj
+T*
+(                high = mid;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(        return low;) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Rotate Array) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Rotate_Array.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Rotate_Array{) Tj
+T*
+ET
+endstream
+endobj
+80 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 81 0 R >>
+endobj
+81 0 obj
+<< /Length 2382 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 39 of 41) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int k = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        k = k%n;//consider k = 2 & n = 4 if we divide k%n= we get reminder as k only) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<k;i++\){) Tj
+T*
+(        int last = arr[n-1];) Tj
+T*
+() Tj
+T*
+(        for\(int j=n-1;j>0;j--\){) Tj
+T*
+(            arr[j] = arr[j-1];) Tj
+T*
+(        }) Tj
+T*
+(        arr[0] = last;) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        System.out.println\("Rotated Array"\);) Tj
+T*
+(        for\(int val : arr\){) Tj
+T*
+(            System.out.print\(val + " "\);) Tj
+T*
+(        }) Tj
+T*
+(        System.out.println\(\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Rotate Array by Reversal Algthm) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Rotate_Array_byReversal_Algthm.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(import java.util.*;) Tj
+T*
+() Tj
+T*
+(public class Rotate_Array_byReversal_Algthm{) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int k = sc.nextInt\(\)%n;) Tj
+T*
+() Tj
+T*
+(        reverse\(arr, 0, n-1\);) Tj
+T*
+(        reverse\(arr, 0, k-1\);) Tj
+T*
+(        reverse\(arr, k, n-1\);) Tj
+T*
+() Tj
+T*
+(        for\(int val : arr\){) Tj
+T*
+(            System.out.print\(val + " "\);) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+() Tj
+T*
+(    public static void reverse\(int[] arr, int start, int end\){) Tj
+T*
+(        while\(start < end\){) Tj
+T*
+(        int temp = arr[start];) Tj
+T*
+(        arr[start] = arr[end];) Tj
+T*
+(        arr[end] = temp;) Tj
+T*
+(        start++;) Tj
+T*
+(        end--;) Tj
+T*
+(            ) Tj
+T*
+(        }) Tj
+T*
+ET
+endstream
+endobj
+82 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 83 0 R >>
+endobj
+83 0 obj
+<< /Length 2599 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 40 of 41) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Second Largest) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/SecondLargest.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(1\) auxiliary space) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(public class SecondLargest {) Tj
+T*
+() Tj
+T*
+(    public static int Solution\(int[] a,int n\){) Tj
+T*
+(            int largest = a[0];) Tj
+T*
+(            int secLarge = -1;) Tj
+T*
+(        for\(int i=1;i<n;i++\){) Tj
+T*
+(            if\(a[i] > largest\){) Tj
+T*
+(                secLarge = largest;) Tj
+T*
+(                largest = a[i];) Tj
+T*
+(            }) Tj
+T*
+(             if\(a[i] < largest && a[i] > secLarge\){) Tj
+T*
+(                secLarge = a[i];) Tj
+T*
+(             }) Tj
+T*
+(        }) Tj
+T*
+(        return secLarge;) Tj
+T*
+(    }) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        ) Tj
+T*
+(        int[] a = {6,6,6,6,6};) Tj
+T*
+(        int n = a.length;) Tj
+T*
+() Tj
+T*
+(        System.out.print\(Solution\(a,n\)\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+() Tj
+T*
+(========================================================================================================) Tj
+T*
+(Problem: Two sum using two pointers) Tj
+T*
+(Level: Medium) Tj
+T*
+(Source: zoho/arraylist/Two_sum_using_two_pointers.java) Tj
+T*
+(Time complexity: O\(n\)) Tj
+T*
+(Space complexity: O\(n\)) Tj
+T*
+(Your original code:) Tj
+T*
+() Tj
+T*
+(//works directly when array is sorted else we need to sort the elements by bruteforce else builtin) Tj
+T*
+(    \(Arrsy.sort\)) Tj
+T*
+(import java.util.Scanner;) Tj
+T*
+() Tj
+T*
+(public class Two_sum_using_two_pointers{) Tj
+T*
+() Tj
+T*
+(    public void  twoPointers\(int[] nums,int target\){) Tj
+T*
+(        ) Tj
+T*
+(        int left = 0;) Tj
+T*
+(        int right = nums.length-1;) Tj
+T*
+(        while\(left < right\){) Tj
+T*
+(            if\(nums[left] + nums[right] < target\){) Tj
+T*
+(                left++;) Tj
+T*
+(            }else if\(nums[left] + nums[right] > target\){) Tj
+T*
+(                right--;) Tj
+T*
+(            }else{ ) Tj
+T*
+(                    System.out.print\(nums[left] + " " + nums[right]\);) Tj
+T*
+(                    return;) Tj
+T*
+(            }) Tj
+T*
+(        }) Tj
+T*
+(    }) Tj
+T*
+(    public static void main\(String[] args\){) Tj
+T*
+(        Scanner sc = new Scanner\(System.in\);) Tj
+T*
+() Tj
+T*
+(        int n = sc.nextInt\(\);) Tj
+T*
+(        int[] arr = new int[n];) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+84 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 85 0 R >>
+endobj
+85 0 obj
+<< /Length 392 >>
+stream
+BT
+/F1 8 Tf
+36 806 Td
+10 TL
+(Page 41 of 41) Tj
+T*
+(        for\(int i=0;i<n;i++\){) Tj
+T*
+(            arr[i] = sc.nextInt\(\);) Tj
+T*
+(        }) Tj
+T*
+() Tj
+T*
+(        int target = sc.nextInt\(\);) Tj
+T*
+() Tj
+T*
+(        Two_sum_using_two_pointers tp = new Two_sum_using_two_pointers\(\);) Tj
+T*
+() Tj
+T*
+(        tp.twoPointers\(arr, target\);) Tj
+T*
+(    }) Tj
+T*
+(}) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+xref
+0 86
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000402 00000 n 
+0000000470 00000 n 
+0000000596 00000 n 
+0000003300 00000 n 
+0000003426 00000 n 
+0000005999 00000 n 
+0000006125 00000 n 
+0000008565 00000 n 
+0000008693 00000 n 
+0000011177 00000 n 
+0000011305 00000 n 
+0000013818 00000 n 
+0000013946 00000 n 
+0000016356 00000 n 
+0000016484 00000 n 
+0000018922 00000 n 
+0000019050 00000 n 
+0000021304 00000 n 
+0000021432 00000 n 
+0000023823 00000 n 
+0000023951 00000 n 
+0000026514 00000 n 
+0000026642 00000 n 
+0000029112 00000 n 
+0000029240 00000 n 
+0000031871 00000 n 
+0000031999 00000 n 
+0000034383 00000 n 
+0000034511 00000 n 
+0000037256 00000 n 
+0000037384 00000 n 
+0000040018 00000 n 
+0000040146 00000 n 
+0000042827 00000 n 
+0000042955 00000 n 
+0000045475 00000 n 
+0000045603 00000 n 
+0000048127 00000 n 
+0000048255 00000 n 
+0000050870 00000 n 
+0000050998 00000 n 
+0000053535 00000 n 
+0000053663 00000 n 
+0000056123 00000 n 
+0000056251 00000 n 
+0000058736 00000 n 
+0000058864 00000 n 
+0000061548 00000 n 
+0000061676 00000 n 
+0000064208 00000 n 
+0000064336 00000 n 
+0000066849 00000 n 
+0000066977 00000 n 
+0000069445 00000 n 
+0000069573 00000 n 
+0000072137 00000 n 
+0000072265 00000 n 
+0000074837 00000 n 
+0000074965 00000 n 
+0000077478 00000 n 
+0000077606 00000 n 
+0000080005 00000 n 
+0000080133 00000 n 
+0000082733 00000 n 
+0000082861 00000 n 
+0000085329 00000 n 
+0000085457 00000 n 
+0000088072 00000 n 
+0000088200 00000 n 
+0000090631 00000 n 
+0000090759 00000 n 
+0000093255 00000 n 
+0000093383 00000 n 
+0000095911 00000 n 
+0000096039 00000 n 
+0000098434 00000 n 
+0000098562 00000 n 
+0000101021 00000 n 
+0000101149 00000 n 
+0000103583 00000 n 
+0000103711 00000 n 
+0000106362 00000 n 
+0000106490 00000 n 
+trailer
+<< /Size 86 /Root 1 0 R >>
+startxref
+106933
+%%EOF

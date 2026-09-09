@@ -1,0 +1,53 @@
+Heap: it is complete binary tree follows special rule called the Heap Property.
+
+types:
+-> Min Heap : Smallest element aleways at the root.
+-> Max Heap : Largest element aleways at the root.
+
+Why do we use Heap?
+-> suppose you have
+    50,10,80,40,20
+    someone asks:
+      -> give the Largest element quickly
+    
+    Array --> 0(n)
+    Heap -->  0(1)
+
+    that's why Heaps are used for:
+    -> Top K Largest elements
+    -> Kth Largest/Smallest
+    -> Priority scheduling
+    -> Dijkstra Algorithm
+    -> Huffman Coding
+    -> Median of Data Stream
+
+Min Heap: 
+  Java has built in class: 
+
+     PriorityQueue<Integer> pq = new PriorityQueue<>(); //this is min heap default.
+
+     //Important Methods: 
+     --> pq.add(10); //insert element
+     --> pq.offer(); //insert element
+     --> pq.peek(); //Smallest element
+     --> pq.poll(); //removes and returns smallest element
+     --> pq.size(); 
+     --> pq.isEmpty();
+
+Max Heap: 
+ By default PriorityQueue is a Min Heap.
+
+ To create a Max Heap, use:
+   
+   PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collection.reverseOrder());
+
+⌚ Time Complexity (Very Important)
+
+   Operation      Time
+-> add()          0(logn)
+-> offer()        0(logn)
+-> poll()         0(logn)
+-> peek()         0(1)
+-> size()         0(1)
+-> isEmpty()      0(1)      
+   
